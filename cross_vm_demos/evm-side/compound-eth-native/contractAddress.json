@@ -1,0 +1,8 @@
+{
+	"MyContract": "0xcc166f312524cc88e2c16c3bdd5735a23376b1fb",
+	"FaucetToken": "0x63b5dc8063ebb9ba9e05d74ec48b8c570f7624cc",
+	"FaucetToken2": "0x812cbbde09af8214a5c3adde18fcec9891196494",
+	"CErc20": "0x866a4a061de0f196205dff79b3c47700b570f617",
+	"CEther": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+	"CErc20Twin": "0x14529a6c979b2563207e260a6138f4026b19ee0d"
+}

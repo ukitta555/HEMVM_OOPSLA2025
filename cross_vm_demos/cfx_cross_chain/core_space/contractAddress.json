@@ -1,0 +1,10 @@
+{
+	"coreSpaceCrossVmProxy": "CFXTEST:TYPE.CONTRACT:ACBVHKRJ037FNGNAFRX7F4ADRJ8TCJK9PAF6F80X7Y",
+	"coreSpaceCoin": "CFXTEST:TYPE.CONTRACT:ACB7XW38X8D0NN6SF19C5V67R2WATG294J8EW226FP",
+	"eSpaceMappedAddress": "0xF2D76a4a43C7949a09d6CB90d66191a0B4cdFb9F",
+	"coreSpaceVault": "cfxtest:acf98uzbm4469bkh5361kxzj0akas67fcut8wu1t1m",
+	"eSpaceCrossVMProxy": "0x471934422642acf5f667370d74bd0732e3911d32",
+	"eSpaceMirrorAddress": "0x54ee1008873d385d91801f77db8a51f6f6cad023",
+	"coreSpaceMainAddress": "cfxtest:aamr3rbhyjncc36v9rv3stc5csd2522kc2v4d1vp1u",
+	"eSpaceRandomAddress": "0x14Dcb427A216216791fB63973c5b13878de30916"
+}

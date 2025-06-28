@@ -1,0 +1,1 @@
+rm -r clion-debug || echo "Already removed"

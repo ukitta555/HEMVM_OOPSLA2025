@@ -1,0 +1,14 @@
+---
+profiles:
+  default:
+    private_key: "0x880e2142568db71570e50ad0ce274b30c01a0b750f9aff33753fafea66c0db6f"
+    public_key: "0x26ee560b96984d602e6fc36586c6cf4ce2e1d4bb85a8bda2486d6cbcce17d773"
+    account: 5f61e930582ca112420399eaac4d224aba550789bd31dbe3d8835abac4267b06
+    rest_url: "http://localhost:8080"
+    faucet_url: "http://localhost:8081"
+  default2:
+    private_key: "0x86b94222e0e35d40f8c54f398dce41f89203708ffc18fbc0e3cf0edbf75b00c3"
+    public_key: "0xcad2e4c58fb5d69685de819c862a12d4c21ff0f285c7cfe5008a80681f4c753e"
+    account: 8c49d0d5bef79d843e5fbe940b86a5f1f50e7719e7fe0df3f6909f5c2eb8b322
+    rest_url: "http://localhost:8080"
+    faucet_url: "http://localhost:8081"

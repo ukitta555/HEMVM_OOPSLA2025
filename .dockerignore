@@ -1,0 +1,137 @@
+# Git
+.git
+.gitignore
+
+# Rust build artifacts (keep image size small)
+target/
+**/target/
+*.rlib
+*.rmeta
+*.so
+*.dylib
+*.dll
+*.exe
+
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+
+
+# MoveEth specific exclusions
+MoviEth/target/
+MoviEth/.aptos/
+MoviEth/.cargo/
+MoviEth/.config/
+MoviEth/.assets/
+MoviEth/.github/
+MoviEth/.git/
+MoviEth/.idea/
+MoviEth/.vscode/
+MoviEth/venv/
+MoviEth/env/
+MoviEth/ENV/
+
+# Profile files
+*.pb
+*.svg
+profile*.svg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Large directories that might be in your workspace
+chenxing-peilun-code/
+
+# Exclude node_modules from cross_vm_demos
+cross_vm_demos/**/node_modules/
+cross_vm_demos/native_and_erc20_tokens_experiments/conflux_experiments/node_modules/
+cross_vm_demos/evm-side/*/node_modules/
+cross_vm_demos/cfx_cross_chain/*/node_modules/

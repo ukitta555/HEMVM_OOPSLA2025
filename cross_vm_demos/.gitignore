@@ -1,0 +1,8 @@
+*.mvsm
+**/build/**
+.idea
+venv
+typechain-types
+artifacts
+node_modules
+__pycache__
