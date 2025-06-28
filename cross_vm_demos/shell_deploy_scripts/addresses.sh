@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export default="0x5f61e930582ca112420399eaac4d224aba550789bd31dbe3d8835abac4267b06"
+export cashier="0x8bd6dd77b66c57786de7d6961f5979a646c1e289a1ec817720f3b8dd4b0e0c46"
+export eth_coin="63B5dc8063eBB9BA9E05d74EC48B8C570f7624Cc"
+export emc_coin="5ca0f43868e106ac9aec48f8f1285896c0b9865d"
+export eth_default="0x14Dcb427A216216791fB63973c5b13878de30916"
+export swap="0x7a526ec5f06a7976caec96614f0db691f53b452424a3897a18a115ddd300c110"
+export move_decimals="00000000"
+export cross_uniswap_pair_address="45bAAe478B597a3d1a6C90eDFBa8b52eaeAc6043"
+export cross_uniswap_proxy="812cBBdE09AF8214a5c3addE18Fcec9891196494"
+export my_contract="0xd1ce0125cabde71d31ea23e1593cc6ff51f6317e"

@@ -1,0 +1,10 @@
+[package]
+name = "coin_wrapper"
+version = "0.0.0"
+
+[addresses]
+coin_wrapper = "_"
+
+[dependencies]
+AptosFramework = { local = "../../../MoviEth/aptos-move/framework/aptos-framework" }
+AptosStdlib = { local = "../../../MoviEth/aptos-move/framework/aptos-stdlib" }

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export espace_mapped_address="0xF2D76a4a43C7949a09d6CB90d66191a0B4cdFb9F"
+export espace_proxy_address="0x471934422642acf5f667370d74bd0732e3911d32"
+export espace_mirror_address="0x54ee1008873d385d91801f77db8a51f6f6cad023"
+
+export core_space_proxy_address="CFXTEST:TYPE.CONTRACT:ACDFUFGD2UM43T3JAAKFEH2D0BMNEPJ9MJU439G114"
+export core_space_coin_address="CFXTEST:TYPE.CONTRACT:ACB7XW38X8D0NN6SF19C5V67R2WATG294J8EW226FP"
+
+export ethereum_address="0x14Dcb427A216216791fB63973c5b13878de30916"

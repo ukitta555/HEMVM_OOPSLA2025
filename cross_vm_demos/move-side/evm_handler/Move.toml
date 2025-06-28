@@ -1,0 +1,9 @@
+[package]
+name = "evm_handler"
+version = "0.0.0"
+
+[addresses]
+evm_handler = "_"
+
+[dependencies]
+AptosFramework = { local = "../../zeroxg-core/aptos-move/framework/aptos-framework" }

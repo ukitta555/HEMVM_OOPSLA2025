@@ -1,0 +1,12 @@
+[package]
+name = "coin_wrapper"
+version = "0.0.0"
+
+[addresses]
+coin_wrapper = "_"
+
+
+[dependencies]
+AptosFramework = { local = "../../../MoviEth/aptos-move/framework/aptos-framework" }
+AptosStdlib = { local = "../../../MoviEth/aptos-move/framework/aptos-stdlib" }
+PancakeSwap = { local = "../pancake-contracts-move/pancake-swap", addr_subst= { pancake = "0x7a526ec5f06a7976caec96614f0db691f53b452424a3897a18a115ddd300c110"} }
