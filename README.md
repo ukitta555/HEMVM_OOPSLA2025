@@ -119,7 +119,7 @@ We assume that you always start from the "MoveXEther" folder.
    - Command to run: `python3 runner_multi_worker_prototype.py  --mode`, with a positional argument of `single-threaded` and `multithreaded`
    - Full command would look like `python3 runner_multi_worker_prototype.py  --mode multithreaded` 
    - This will start compiling a HEMVM version of Aptos client, and it will run the 500k transactions experiments from Table 2 in either multi-threaded or single-threaded mode, depending on the selected mode.
-   - Output location: Terminal + File (`cd ./results && cat results.txt` or `cd ./results && cat results.txt`)
+   - Output location: Terminal + File (`cd ./results && cat results_single-threaded.txt` or `cd ./results && cat results_multithreaded.txt`)
    - Output description: For each of the experiments, you will see a the number of seconds it took to finish the benchmark.
 
 ### Notes
