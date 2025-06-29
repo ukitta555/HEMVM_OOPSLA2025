@@ -6,11 +6,14 @@ This artifact accompanies the paper titled "HEMVM: a Heterogeneous Blockchain Fr
 ### Supported Claims
 
 - **Claim 1:** Design that is presented in the paper (Figure 2, 4, 9, 12) is feasible. 
+
   *Supported by:* We provide the full source code of the prototype that compiles and runs.
 
 
 - **Claim 2:** Empirical results presented in the paper (Table 1, 2) are reproducible.  
+
   *Supported by:* provided code artifact that can be used to evaluate the prototype to verify the stated claims.
+
 ---
 
 ## 2. Hardware Dependencies
@@ -32,13 +35,16 @@ There is no GPU requirements for this artifact.
 This artifact requires users install Docker first.
 
 To install Docker please use one of the following resources:
+
 1. [Install Docker for Ubuntu.](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
 2. [Install Docker for Mac.](https://docs.docker.com/docker-for-mac/install/)
+
 3. [Install Docker for Windows.](https://docs.docker.com/docker-for-windows/install/)
 
 
 
-After you have Docker installed, proceed to the DockerHub(TODO: LINK) and pull the image of the artifact:
+After you have Docker installed, proceed to the DockerHub([link](https://hub.docker.com/repository/docker/ukitta555/oopsla2025hemvm/general)) and pull the image of the artifact:
 
 ```
 sudo docker pull ukitta555/oopsla2025hemvm:latest
@@ -94,7 +100,7 @@ We assume that you always start from the "MoveXEther" folder.
    
 2. **Experiment 2: Clean Aptos (Table 1, first 3 rows)**
    - ``` cd cross_vm_demos/experiment_runner/ ```
-   - Command to run: `python3 python3 runner_clean_aptos.py`
+   - Command to run: `python3 runner_clean_aptos.py`
    - This will start compiling a clean Aptos blockchain client with no modification, and will run 3 different benchmarks on it
    - Output location: Terminal + File (`cd ./results && cat results_clean_aptos.txt`)
    - Output description: For each of the experiments, you will see a the number of seconds it took to finish the benchmark.
