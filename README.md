@@ -79,7 +79,7 @@ There are three types of folders that are contained in "cross_vm_demos". Specifi
 
 2) Folders with pregenerated experiment data (pregenerated_transaction_files_cfx, pregenerated_transactions_files, pregenerated_transactions_files_multiworker), which are there to save the evaluation comittee time in case they want to evaluate the artifact without generating data from scratch.
 
-3) Infrastracture support (shell_deploy_scripts, uniswap_experiments, native_and_erc20_tokens_experiments, compound_experiments, experiment_runner). These folders contain code that helps to deploy smart contracts and DeFi protocols to the blockchain in order to set up the experiments, and also contain code that generates transaction workloads, which later go into folders from part 2).
+3) Infrastracture support (shell_deploy_scripts, uniswap_experiments, native_and_erc20_tokens_experiments, compound_experiments, experiment_runner). These folders contain code that helps to deploy smart contracts and DeFi protocols to the blockchain in order to set up the experiments, and also contain code that generates transaction workloads, which later go into folders from part 2.
 
 We would like to point out the "experiment_runner" folder, which contains 4 runner scripts for different types of experiments that we have conducted, such as Conflux blockchain experiments, Aptos blockchain experiments, multi-threaded and single-threaded 500K txs HEMVM experiments (realistic workload), and 100K txs HEMVM experiments with maximal cache usage (maximum performance test workload). This folder will be the most useful for later evaluation.
 
@@ -133,7 +133,15 @@ We assume that you always start from the "MoveXEther" folder.
 ### Adaptation Instructions
 - Smaller/bigger experiment sizes: in case one would like to perform smaller/bigger experiments, they would need to go to folders that contain Python scripts that generate the transaction workloads (see section 3). 
 
-To generate new transactions, you need to run a node in a background mode (`nohup cargo run --release -p aptos -- node run-local-testnet --with-faucet --faucet-port 8081 --force-restart --assume-yes --evm-genesis-account 0x14Dcb427A216216791fB63973c5b13878de30916 > ../logs.txt 2>&1 &`), then run the corresponding shell deploy script (in the `shell_deploy_scripts` folder), and the run the corresponding Python workload generation script. The correspondance can be inferred from the runner files described in section 4.
+To generate new transactions for experiment types 3 and 4, you need to run a node in a background mode inside of the corresponding client folder (`nohup cargo run --release -p aptos -- node run-local-testnet --with-faucet --faucet-port 8081 --force-restart --assume-yes --evm-genesis-account 0x14Dcb427A216216791fB63973c5b13878de30916 > ../logs.txt 2>&1 &`), wait for approximately 1 minute for the faucet to launch, then run the corresponding shell deploy script (in the `shell_deploy_scripts` folder), and, finally, run the corresponding Python workload generation script. The correspondance can be inferred from the runner files described in section 4.
+
+To generate new transactions for experiment types 1 and 2, similar steps are required. The only thing that changes across experiment types is the client folder and the command required to launch the client. 
+
+To be precise, for experiment type 1 (Conflux), one would need to first make sure that `/dev-chain/blockchain_data` of the Conflux client folder does not exist (and remove it if it does), navigate to folder `/MoveXEther/EVoM-cfx-rust-oopsla24/dev-chain`,  and then launch the node using `../target/release/conflux --config development.toml > ../logs.txt 2>&1 &`. Then, launch the desired shell script, and the python file that does the transaction generation. 
+
+For experiment type 2, use `nohup cargo run --release -p aptos -- node run-local-testnet --with-faucet --faucet-port 8081 --force-restart --assume-yes > ../logs.txt 2>&1 &` to launch the node in `aptos-core` folder. Next steps are similar to experiment types 3 and 4.
+
+After the transaction generation script is finished, kill the node by using `kill -9 <PID>`, where `<PID>` can be found by using `top` command. The generated file can be placed in the corresponding folder and later used in order to run the same experiments as in step 4.
  
 
 ## CONTACT
