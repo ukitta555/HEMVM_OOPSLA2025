@@ -10,7 +10,7 @@ This artifact accompanies the paper titled "HEMVM: a Heterogeneous Blockchain Fr
   *Supported by:* We provide the full source code of the prototype that compiles and runs.
 
 
-- **Claim 2:** Empirical results presented in the paper (Table 1, 2) are reproducible.  
+- **Claim 2:** Empirical results presented in the paper (Figure 10, Table 1) are reproducible.  
 
   *Supported by:* provided code artifact that can be used to evaluate the prototype to verify the stated claims.
 
@@ -90,7 +90,7 @@ We would like to point out the "experiment_runner" folder, which contains 4 runn
 ### Reproducing Experiments
 We assume that you always start from the "MoveXEther" folder.
 
-1. **Experiment set 1: Conflux benchmarks (Table 1, last 2 rows)**
+1. **Experiment set 1: Conflux benchmarks (Table 10b, last 2 rows)**
    - ``` cd cross_vm_demos/experiment_runner/ ```
    - Command to run: `python3 runner_cfx.py`, with possible arguments of ```native, erc20, cross-native, cross-erc20```
    - Full command would look like `python3 runner_cfx.py native` or `python3 runner_cfx.py cross-erc20` 
@@ -98,7 +98,7 @@ We assume that you always start from the "MoveXEther" folder.
    - Output location: terminal 
    - Output description: how many seconds it took to execute the payload of 100k transactions
    
-2. **Experiment 2: Clean Aptos (Table 1, first 3 rows)**
+2. **Experiment 2: Clean Aptos (Figure 10a, Aptos bars)**
    - ``` cd cross_vm_demos/experiment_runner/ ```
    - Command to run: `python3 runner_clean_aptos.py`
    - This will start compiling a clean Aptos blockchain client with no modification, and will run 3 different benchmarks on it
@@ -106,19 +106,19 @@ We assume that you always start from the "MoveXEther" folder.
    - Output description: For each of the experiments, you will see a the number of seconds it took to finish the benchmark.
 
 
-3. **Experiment 3: Single-threaded 100k transactions experiments (Table 1, everything else)**
+3. **Experiment 3: Single-threaded 100k transactions experiments (Figure 10, everything else)**
    - ``` cd cross_vm_demos/experiment_runner/ ```
    - Command to run: `python3 runner.py`
-   - This will start compiling a HEMVM version of Aptos client, and it will run the 100k transaction experiments from Table 1 in single-threaded mode.
+   - This will start compiling a HEMVM version of Aptos client, and it will run the 100k transaction experiments from Figure 10a and Table 10b in single-threaded mode.
    - Output location: Terminal + File (`cd ./results && cat results_prototype.txt`)
    - Output description: For each of the experiments, you will see a the number of seconds it took to finish the benchmark.
 
 
-4. **Experiment 4: Multi-threaded and single-threaded 500k transactions experiments (Table 2)**
+4. **Experiment 4: Multi-threaded and single-threaded 500k transactions experiments (Table 1)**
    - ``` cd cross_vm_demos/experiment_runner/ ```
    - Command to run: `python3 runner_multi_worker_prototype.py  --mode`, with a positional argument of `single-threaded` and `multithreaded`
    - Full command would look like `python3 runner_multi_worker_prototype.py  --mode multithreaded` 
-   - This will start compiling a HEMVM version of Aptos client, and it will run the 500k transactions experiments from Table 2 in either multi-threaded or single-threaded mode, depending on the selected mode.
+   - This will start compiling a HEMVM version of Aptos client, and it will run the 500k transactions experiments from Table 1 in either multi-threaded or single-threaded mode, depending on the selected mode.
    - Output location: Terminal + File (`cd ./results && cat results_single-threaded.txt` or `cd ./results && cat results_multithreaded.txt`)
    - Output description: For each of the experiments, you will see a the number of seconds it took to finish the benchmark.
 
